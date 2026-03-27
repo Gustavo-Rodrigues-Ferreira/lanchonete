@@ -2,59 +2,50 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /*evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade*/
+    box-sizing: border-box; /*evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade*/
     list-style: none;
 }
 
 /*estilizando o header*/
 .cabecalho {
-    background-color: #830900;
-    color: white;
-    padding: 1.5rem;
-    /*poderia ser 24px*/
+    background-color: #830900; /*cor de fundo*/
+    color: white; /*cor da letra*/
+    padding: 1.5rem; /*poderia ser 24px*/
+    
 
     /*alinhamento dos itens*/
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 
     /*header fixo*/
-    position: sticky;
-    /*posição do header para sobrepor os outros elementos*/
+    position: sticky; /*posição do header para sobrepor os outros elementos*/
     left: 0;
     top: 0;
-    z-index: 999;
-    /*eixo z - profundidade do elemento*/
+    z-index: 999; /*eixo z - profundidade do elemento*/
+    
 }
 
 /*logo do header*/
 .div-logo img {
-    width: 15%;
-    /*usando a % para diminuir seu tamanho*/
+    width: 15%; /*usando a % para diminuir seu tamanho*/
+    cursor: pointer;
 }
 
 .div-button a button {
-    width: 5rem;
-    /*poderia ser 80 px*/
-    padding: 0.5rem;
-    /*poderia ser 8 px*/
-    background-color: #ad3118;
-    /*cor do botao*/
-    color: white;
-    /*cor da letra*/
-    border: none;
-    /*tirando a borda*/
-    font-weight: 700;
-    /*espessura da letra*/
-    border-radius: 10px;
-    /*arredonda a borda do botao*/
+    width: 5rem; /*poderia ser 80 px*/
+    padding: 0.5rem; /*poderia ser 8 px*/
+    background-color: #ad3118; /*cor do botao*/
+    color: white; /*cor da letra*/
+    border: none; /*tirando a borda*/
+    font-weight: 700; /*espessura da letra*/
+    border-radius: 10px; /*arredonda a borda do botao*/
+    cursor: pointer;
 }
 
 .section-01 {
-    padding: 9rem;
-    /*preenchimento interno da section*/
+    padding: 5rem; /*preenchimento interno da section*/
     background-image: url(imagens/pexels-burgers-1839090.jpg);
     background-position: center;
     background-size: cover;
@@ -63,82 +54,105 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    /*poderia ser 32px*/
-    flex-wrap: wrap;
-    /*isso significa que as div poderao quebrar de linha, caso necessario*/
+    gap: 2.5rem; /*poderia ser 32px*/
+    flex-wrap: wrap; /*isso significa que as div poderao quebrar de linha, caso necessario*/
 }
 
 .div01 {
-    text-align: center;
-    background-color: #ad311898;
-    /*cor de fundo*/
-    color: white;
-    /*cor da letra*/
-    text-align: center;
-    /*centralizando o texto*/
-    font-weight: 700;
-    /*grossura da fonte*/
-    font-size: 2rem;
-    /*tamanha da letra dentro da caixa*/
-    padding: 1rem;
-    /*preechimento da caixa*/
-    width: 25%;
-    /*largura de caixa em %*/
-    height: 20rem;
-    /*altura da caixa com o REM*/
-    min-width: 299px;
-    /*largura minima da caixa para smartphone*/
+    background-color: #ad311898; /*cor de fundo*/
+    color: white; /*cor da letra*/
+    text-align: center; /*centralizando o texto*/
+    font-weight: 700; /*grossura da fonte*/
+    font-size: 2rem; /*tamanha da letra dentro da caixa*/
+    padding: 1rem; /*preechimento da caixa*/
+    width: 25%; /*largura de caixa em %*/
+    height: 20rem; /*altura da caixa com o REM*/
+    min-width: 299px; /*largura minima da caixa para smartphone*/
 }
 
 .div02 {
-    padding: 1rem;
-    /*preechimento da caixa*/
-    width: 25%;
-    /*largura de caixa em %*/
-    height: 20rem;
-    /*altura da caixa com o REM*/
-    min-width: 299px;
-    /*largura minima da caixa para smartphone*/
-    background-image: url(imagens/lanche1.jpg);
-    /*inserindo a img*/
-    background-position: center;
-    /*centralizando a img*/
-    background-repeat: no-repeat;
-    /*para a img não repetir*/
-    background-size: cover;
-    /*cobrir toda a cx*/
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+    padding: 1rem; /*preechimento da caixa*/
+    width: 25%; /*largura de caixa em %*/
+    height: 20rem; /*altura da caixa com o REM*/
+    min-width: 299px; /*largura minima da caixa para smartphone*/
+    background-image: url(imagens/lanche1.jpg); /*inserindo a img*/
+    background-position: center; /*centralizando a img*/
+    background-repeat: no-repeat; /*para a img não repetir*/
+    background-size: cover; /*cobrir toda a cx*/
+    
+   display: flex; /*deixando lado a lado*/
+   align-items: end; /*Deixando no final*/
+   justify-content: center; /*centralizando horizontalmente*/
    gap: 15px;
 }
 
 /*aqui estamos estilizando as listas*/
 .ul-div01 li a {
-    text-decoration: none;
-    /*removendo sublinhado*/
-    background-color: #830900b0;
-    /*cor de fundo*/
-    color: white;
-    /*cor da letra*/
-    padding: 4px;
-    /*preenchimento interno*/
-    font-size: 1.3rem;
-    /*tamanho da letra*/
-    border-radius: 10px;
-    /*arredonda a borda do botao*/
+    text-decoration: none; /*removendo sublinhado*/
+    background-color: #830900b0; /*cor de fundo*/
+    color: white;  /*cor da letra*/
+    padding: 4px; /*preenchimento interno*/
+    font-size: 1.3rem; /*tamanho da letra*/
+    border-radius: 10px; /*arredonda a borda do botao*/
 }
 
 .ul-div01 li {
-    margin: 10px 20px;
-    /*alterando os 4 lados externos dos elementos, primeiro valor (sup e inf) e segundo valor (lado dir e lado esq)*/
+    margin: 10px 20px; /*alterando os 4 lados externos dos elementos, primeiro valor (sup e inf) e segundo valor (lado dir e lado esq)*/
 }
 
-.fa-burger,
-.fa-basket-shopping {
+.div02 i {
     color: white;
     font-size: 1.5rem;
     margin-right: 6.5rem;
+}
+
+/*aqui estamos estilizando a tarja em destaque entre as section*/
+.img-div {
+    padding: 2%; /*preenchimento interno*/
+    background-image: url(imagens/pngtree-red-pattern-wine-red-texture-image_892413.jpg); /*caminho da imagem*/
+    background-position: center; /*posição da img*/
+    background-size: cover; /*preenchimento total na caixa*/
+}
+
+/*estilizando a segunda section*/
+.section-02 {
+    display: flex; /*deixando lado a lado*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    gap: 1.5rem; /*brecha entre as caixaas*/
+    padding: 5rem; /*preenchimento interno*/
+    background-color: #ad3118; /*cor de fundo*/
+    flex-wrap: wrap; /*caso necessario voce podera quebrar*/
+}
+
+/*estelização das 3 div section 2*/
+.caixa {
+    width: 25%; /*largura da caixa*/
+    height: 22rem; /*altura da caixa*/
+    background-color: #831008; /*cor de fundo*/
+    min-width: 299px; /*largura minima da div*/
+    font-size: 1.2rem; /*tamanho da letra*/
+    color: white; /*cor da letra*/
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.349); /*sombra externa das caixas*/
+    cursor: pointer; /*muda o cursor do mouse para maozinha*/
+}
+
+.caixa:hover {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.801); /*sombra externa das caixas*/
+    transition: 0.5s; /*velocidade do movimento*/
+}
+
+.section-03 {
+    display: flex; /*deixando lado a lado*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    gap: 1.5rem; /*brecha entre as caixaas*/
+    padding: 5rem; /*preenchimento interno*/
+    background-color: #ad3118; /*cor de fundo*/
+    flex-wrap: wrap; /*caso necessario voce podera quebrar*/
+}
+
+/*chamando as classes primárias para estelização*/
+.div03, .div04 {
+    height: 15rem; /*altura da caixa*/
 }
