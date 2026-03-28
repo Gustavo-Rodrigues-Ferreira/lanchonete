@@ -115,7 +115,7 @@
 }
 
 /*estilizando a segunda section*/
-.section-02 {
+.section-02, .section-04 {
     display: flex; /*deixando lado a lado*/
     justify-content: center; /*alinhamento horizontal*/
     align-items: center; /*alinhamento vertical*/
@@ -139,7 +139,7 @@
 
 .caixa:hover {
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.801); /*sombra externa das caixas*/
-    transition: 0.5s; /*velocidade do movimento*/
+    transition: 0.8s; /*velocidade do movimento*/
 }
 
 .section-03 {
@@ -155,4 +155,73 @@
 /*chamando as classes primárias para estelização*/
 .div03, .div04 {
     height: 15rem; /*altura da caixa*/
+    padding: 1rem; /*preechimento interno*/
+    text-align: center;
+}
+
+/*estelização dos texto da primeira caixa*/
+.content-text {
+    text-align: start; /*alinhando os texto ao inicio*/
+    margin: 1rem; /*espaçamento em torno da caixa*/
+    font-weight: 700; /*peso da fonte*/
+}
+
+/*acessando os icons para estilização*/
+.icon-div3 i {
+    font-size: 2rem; /*tamanho do icon*/
+    margin-top: 1rem; /*espaçamento superior dos icon*/
+}
+
+/*inicio formatação section 03*/
+.button-div04 a button {
+    padding: 0.5rem; /*preenchimento interno button*/
+    background-color: #ad3118; /*cor de fundo*/
+    color: white; /*cor da letra*/
+    font-weight: 600; /*peso da fonte*/
+    margin: 1rem 0; /*espaçamento sup/inf 1rem, e 0 nas laterais*/
+    border: none; /*removendo a borda*/
+    border-radius: 10px; /*redondando a borda*/
+    cursor: pointer; 
+}
+
+.text-div04 p {
+    font-size: 1.5rem; /*tamanho da fonte*/
+    text-align: center; /*centralizando o texto*/
+    font-weight: 600; /*peso da fonte*/
+}
+
+.bacon {
+    background-image: url(imagens/lanchebacon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bacon:hover {
+    width: 28%; /*largura da caixa*/
+    height: 24rem; /*altura da caixa*/
+}
+
+.batata {
+    background-image: url(imagens/batata.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.batata:hover {
+    width: 28%; /*largura da caixa*/
+    height: 24rem; /*altura da caixa*/
+}
+
+.combo {
+    background-image: url(imagens/combo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.combo:hover {
+    width: 28%; /*largura da caixa*/
+    height: 24rem; /*altura da caixa*/
 }
