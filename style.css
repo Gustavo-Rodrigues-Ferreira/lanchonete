@@ -297,3 +297,23 @@
         flex-direction: column;
     }
 }
+
+.whatsap img { /*alterando tamanho do icon whatsa*/
+    width: 40px;
+}
+
+.whatsap img:hover {
+    width: 45px;
+    transition: 0,3s;
+}
+
+ /*div q guarda o icon whats*/
+.whatsap {
+    position: fixed; /*fica fixo na posição*/
+    right: 10px; /*posiciona a direita (25px)*/
+    bottom: 20px; /*posiciona a 25px do bottom*/
+}
+
+.bebidas p {
+    padding: 1rem;
+}
