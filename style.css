@@ -296,21 +296,25 @@
     .content {
         flex-direction: column;
     }
+
+    .whatsap img { /*alterando tamanho do icon whatsa*/
+        width: 2rem;
+    }
 }
 
 .whatsap img { /*alterando tamanho do icon whatsa*/
-    width: 40px;
+    width: 3rem;
 }
 
 .whatsap img:hover {
-    width: 45px;
+    width: 55px;
     transition: 0,3s;
 }
 
  /*div q guarda o icon whats*/
 .whatsap {
     position: fixed; /*fica fixo na posição*/
-    right: 10px; /*posiciona a direita (25px)*/
+    right: 25px; /*posiciona a direita (25px)*/
     bottom: 20px; /*posiciona a 25px do bottom*/
 }
 
